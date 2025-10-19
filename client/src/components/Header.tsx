@@ -21,9 +21,18 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
-            <div className="flex items-center gap-2 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3">
-              <span className="text-xl font-bold text-primary">Tov</span>
-              <span className="text-sm font-semibold hidden sm:inline">Industrial Automation</span>
+            <div className="flex items-center gap-3 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3">
+              <div className="relative w-8 h-8 flex-shrink-0">
+                <div className="absolute inset-0 bg-primary rounded-sm rotate-45"></div>
+                <div className="absolute inset-1 bg-background rounded-sm rotate-45"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-3 h-3 bg-primary rounded-sm"></div>
+                </div>
+              </div>
+              <div className="flex flex-col -space-y-1">
+                <span className="text-xl font-bold leading-none">TOV</span>
+                <span className="text-xs font-medium text-muted-foreground hidden sm:inline leading-none">INDUSTRIAL AUTOMATION</span>
+              </div>
             </div>
           </Link>
 
