@@ -197,7 +197,7 @@ export default function Contact() {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold mb-2">Service Area</h3>
                     <p className="text-sm opacity-90">
-                      Based in Ontario, we proudly serve small to mid-sized manufacturers, 
+                      Based in Ontario, our team proudly serves small to mid-sized manufacturers, 
                       bakeries, and industrial facilities across the entire province. 
                       On-site service and remote support available.
                     </p>

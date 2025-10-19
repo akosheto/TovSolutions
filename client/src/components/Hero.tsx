@@ -25,9 +25,9 @@ export function Hero() {
               View Our Work
             </Button>
           </Link>
-          <Link href="/contact" data-testid="link-contact-mark">
+          <Link href="/contact" data-testid="link-contact-team">
             <Button size="lg" className="bg-chart-2 text-white hover-elevate active-elevate-2">
-              Contact Mark
+              Get In Touch
             </Button>
           </Link>
         </div>

@@ -1,15 +1,14 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Calendar, Target, Shield } from "lucide-react";
-import markImage from "@assets/generated_images/Professional_founder_headshot_Mark_7e208189.png";
+import { Award, Calendar, Target, Shield, Users } from "lucide-react";
 
 export default function About() {
   const timeline = [
     { year: "2010", event: "Founded Tov Industrial Automation" },
     { year: "2013", event: "Expanded to serve bakeries across Ontario" },
-    { year: "2017", event: "Certified Siemens Partner" },
-    { year: "2020", event: "100th successful automation project" },
+    { year: "2017", event: "Became Certified Siemens Partner" },
+    { year: "2020", event: "Completed 100th successful automation project" },
     { year: "2025", event: "15 years of continuous excellence" },
   ];
 
@@ -29,6 +28,11 @@ export default function About() {
       title: "Local Partnership",
       description: "Supporting Ontario manufacturers with dedicated service.",
     },
+    {
+      icon: Users,
+      title: "Expert Team",
+      description: "Experienced engineers committed to your success.",
+    },
   ];
 
   return (
@@ -44,35 +48,29 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-              <div>
-                <img 
-                  src={markImage} 
-                  alt="Mark, Founder of Tov Industrial Automation" 
-                  className="w-full rounded-md"
-                  data-testid="img-founder"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl font-semibold mb-6">Meet Mark, Our Founder</h2>
-                <div className="space-y-4 text-base leading-relaxed">
-                  <p>
-                    With over 15 years of hands-on experience in industrial automation, Mark founded 
-                    Tov Industrial Automation to serve the unique needs of Ontario's small to mid-sized 
-                    manufacturers.
-                  </p>
-                  <p>
-                    His expertise spans PLC programming, Siemens integration, and Allen Bradley systems, 
-                    with a particular focus on helping bakeries and small industrial firms modernize their 
-                    operations efficiently and cost-effectively.
-                  </p>
-                  <p>
-                    Mark's commitment to technical excellence and personalized service has built lasting 
-                    partnerships across the province, delivering proven results that improve efficiency 
-                    and reduce downtime.
-                  </p>
-                </div>
-              </div>
+            <div className="max-w-4xl mx-auto mb-16">
+              <Card>
+                <CardContent className="p-8">
+                  <h2 className="text-3xl font-semibold mb-6 text-center">Our Company</h2>
+                  <div className="space-y-4 text-base leading-relaxed">
+                    <p>
+                      Since 2010, Tov Industrial Automation has been serving Ontario's manufacturing sector 
+                      with expert automation solutions. Our team of experienced engineers specializes in 
+                      PLC programming, Siemens integration, and Allen Bradley systems.
+                    </p>
+                    <p>
+                      We focus on helping small to mid-sized manufacturers and food processing facilities 
+                      modernize their operations efficiently and cost-effectively. Our approach combines 
+                      technical expertise with a deep understanding of our clients' unique operational needs.
+                    </p>
+                    <p>
+                      With over 100 successful projects across Ontario, our commitment to technical excellence 
+                      and personalized service has built lasting partnerships throughout the province, delivering 
+                      proven results that improve efficiency and reduce downtime.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="mb-16">
@@ -97,7 +95,7 @@ export default function About() {
 
             <div>
               <h2 className="text-3xl font-semibold mb-8 text-center">Our Values</h2>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {values.map((value, index) => (
                   <Card key={index} data-testid={`value-${index}`}>
                     <CardContent className="p-6 text-center">
