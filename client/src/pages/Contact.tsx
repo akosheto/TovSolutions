@@ -9,6 +9,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function Contact() {
   const { toast } = useToast();
@@ -21,21 +23,36 @@ export default function Contact() {
     message: "",
   });
 
+  const submitMutation = useMutation({
+    mutationFn: async (data: typeof formData) => {
+      return apiRequest("POST", "/api/contact", data);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you within 24 hours.",
+      });
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        message: "",
+      });
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      projectType: "",
-      message: "",
-    });
+    submitMutation.mutate(formData);
   };
 
   return (
@@ -140,8 +157,13 @@ export default function Contact() {
                         />
                       </div>
 
-                      <Button type="submit" className="w-full" data-testid="button-submit-contact">
-                        Send Message
+                      <Button 
+                        type="submit" 
+                        className="w-full" 
+                        disabled={submitMutation.isPending}
+                        data-testid="button-submit-contact"
+                      >
+                        {submitMutation.isPending ? "Sending..." : "Send Message"}
                       </Button>
                     </form>
                   </CardContent>
