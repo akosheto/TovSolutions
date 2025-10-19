@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Factory } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 export function Header() {
@@ -22,28 +22,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home">
             <div className="flex items-center gap-3 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3">
-              <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none">
-                <rect x="4" y="14" width="8" height="14" className="fill-primary" />
-                <rect x="6" y="16" width="1.5" height="2" className="fill-background" />
-                <rect x="9.5" y="16" width="1.5" height="2" className="fill-background" />
-                <rect x="6" y="20" width="1.5" height="2" className="fill-background" />
-                <rect x="9.5" y="20" width="1.5" height="2" className="fill-background" />
-                <rect x="6" y="24" width="1.5" height="2" className="fill-background" />
-                <rect x="9.5" y="24" width="1.5" height="2" className="fill-background" />
-                <rect x="14" y="10" width="10" height="18" className="fill-primary" />
-                <rect x="16" y="12" width="2" height="2.5" className="fill-background" />
-                <rect x="20" y="12" width="2" height="2.5" className="fill-background" />
-                <rect x="16" y="16" width="2" height="2.5" className="fill-background" />
-                <rect x="20" y="16" width="2" height="2.5" className="fill-background" />
-                <rect x="16" y="20" width="2" height="2.5" className="fill-background" />
-                <rect x="20" y="20" width="2" height="2.5" className="fill-background" />
-                <rect x="16" y="24" width="2" height="2.5" className="fill-background" />
-                <rect x="20" y="24" width="2" height="2.5" className="fill-background" />
-                <rect x="26" y="18" width="6" height="10" className="fill-primary" />
-                <rect x="27.5" y="20" width="1.5" height="2" className="fill-background" />
-                <rect x="27.5" y="24" width="1.5" height="2" className="fill-background" />
-                <path d="M18 6 L19 10 L17 10 Z" className="fill-primary" />
-              </svg>
+              <Factory className="w-8 h-8 text-primary flex-shrink-0" />
               <div className="flex flex-col -space-y-1">
                 <span className="text-xl font-bold leading-none">TOV</span>
                 <span className="text-xs font-medium text-muted-foreground hidden sm:inline leading-none">INDUSTRIAL AUTOMATION</span>

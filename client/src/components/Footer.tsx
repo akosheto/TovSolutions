@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Factory } from "lucide-react";
 import { SiLinkedin } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 
@@ -31,28 +31,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <svg className="w-8 h-8 flex-shrink-0" viewBox="0 0 32 32" fill="none">
-                <rect x="4" y="14" width="8" height="14" className="fill-primary" />
-                <rect x="6" y="16" width="1.5" height="2" className="fill-card" />
-                <rect x="9.5" y="16" width="1.5" height="2" className="fill-card" />
-                <rect x="6" y="20" width="1.5" height="2" className="fill-card" />
-                <rect x="9.5" y="20" width="1.5" height="2" className="fill-card" />
-                <rect x="6" y="24" width="1.5" height="2" className="fill-card" />
-                <rect x="9.5" y="24" width="1.5" height="2" className="fill-card" />
-                <rect x="14" y="10" width="10" height="18" className="fill-primary" />
-                <rect x="16" y="12" width="2" height="2.5" className="fill-card" />
-                <rect x="20" y="12" width="2" height="2.5" className="fill-card" />
-                <rect x="16" y="16" width="2" height="2.5" className="fill-card" />
-                <rect x="20" y="16" width="2" height="2.5" className="fill-card" />
-                <rect x="16" y="20" width="2" height="2.5" className="fill-card" />
-                <rect x="20" y="20" width="2" height="2.5" className="fill-card" />
-                <rect x="16" y="24" width="2" height="2.5" className="fill-card" />
-                <rect x="20" y="24" width="2" height="2.5" className="fill-card" />
-                <rect x="26" y="18" width="6" height="10" className="fill-primary" />
-                <rect x="27.5" y="20" width="1.5" height="2" className="fill-card" />
-                <rect x="27.5" y="24" width="1.5" height="2" className="fill-card" />
-                <path d="M18 6 L19 10 L17 10 Z" className="fill-primary" />
-              </svg>
+              <Factory className="w-8 h-8 text-primary flex-shrink-0" />
               <div className="flex flex-col -space-y-1">
                 <span className="text-lg font-bold leading-none">TOV</span>
                 <span className="text-xs font-medium text-muted-foreground leading-none">INDUSTRIAL AUTOMATION</span>
