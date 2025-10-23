@@ -23,8 +23,8 @@ export default function Services() {
     },
     {
       icon: Boxes,
-      title: "Siemens Integration",
-      description: "Comprehensive Siemens automation from design through implementation and support.",
+      title: "OMRON Integration",
+      description: "Comprehensive OMRON automation from design through implementation and support.",
       features: [
         "S7-1200/1500 Programming",
         "TIA Portal Development",
@@ -36,7 +36,7 @@ export default function Services() {
     },
     {
       icon: Wrench,
-      title: "Allen Bradley Solutions",
+      title: "Allen-Bradley Solutions",
       description: "Complete Rockwell Automation services for reliable industrial control.",
       features: [
         "ControlLogix/CompactLogix",
@@ -142,10 +142,9 @@ export default function Services() {
                   <img src={siemensImage} alt="Siemens PLC Equipment" className="w-full h-full object-cover" />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-2xl">Siemens</CardTitle>
+                  <CardTitle className="text-2xl">OMRON</CardTitle>
                   <CardDescription className="text-base">
-                    Certified partner for Siemens automation systems including TIA Portal, S7 series PLCs, 
-                    and SCADA solutions.
+                    Certified partner for OMRON automation systems including TIA Portal, S7 series PLCs, and SCADA solutions.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
