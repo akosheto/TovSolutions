@@ -7,17 +7,17 @@ export function ServicesOverview() {
   const services = [
     {
       icon: Code2,
-      title: "PLC Programming",
+      title: "Custom PLC Automation",
       description: "Custom PLC programming solutions tailored to your manufacturing processes. Expert development and troubleshooting for reliable automation systems.",
     },
     {
       icon: Boxes,
-      title: "Siemens Integration",
-      description: "Comprehensive Siemens automation solutions from design to implementation. Leveraging industry-leading technology for optimal performance.",
+      title: "OMRON PLC",
+      description: "Comprehensive OMRON automation solutions from design to implementation. Leveraging industry-leading technology for optimal performance.",
     },
     {
       icon: Wrench,
-      title: "Allen Bradley Solutions",
+      title: "Allen-Bradley PLC",
       description: "Complete Allen Bradley and Rockwell Automation services. Installation, programming, and ongoing support for your control systems.",
     },
   ];
