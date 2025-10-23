@@ -20,7 +20,9 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-background border-b">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" data-testid="link-home" />
+          <Link href="/" data-testid="link-home">
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2F0879fbf68aa842f5814d6c2495d62d8c?format=webp&width=800" alt="TOV Industrial Automation" className="h-12 w-auto" />
+          </Link>
 
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
