@@ -5,7 +5,7 @@ export function FeaturesSection() {
     {
       icon: CheckCircle2,
       title: "Proven Expertise",
-      description: "15 years of hands-on experience with PLC systems, Siemens, and Allen Bradley platforms.",
+      description: "15 years of hands-on experience with PLC systems, OMRON, and Allen Bradley platforms.",
     },
     {
       icon: Users,
@@ -28,7 +28,7 @@ export function FeaturesSection() {
     <section className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-4">Why Choose Tov</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">Why Choose TOV Industrial Automations?</h2>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
