@@ -7,7 +7,7 @@ export default function About() {
   const timeline = [
     { year: "2010", event: "Founded Tov Industrial Automation" },
     { year: "2013", event: "Expanded to serve bakeries across Ontario" },
-    { year: "2017", event: "Became Certified Siemens Partner" },
+    { year: "2017", event: "Became Certified OMRON Partner" },
     { year: "2020", event: "Completed 100th successful automation project" },
     { year: "2025", event: "15 years of continuous excellence" },
   ];
@@ -42,7 +42,7 @@ export default function About() {
         <section className="py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">About Tov Industrial Automation</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Company History & Milestones</h1>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 15 years of dedication to industrial automation excellence
               </p>
@@ -54,9 +54,9 @@ export default function About() {
                   <h2 className="text-3xl font-semibold mb-6 text-center">Our Company</h2>
                   <div className="space-y-4 text-base leading-relaxed">
                     <p>
-                      Since 2010, Tov Industrial Automation has been serving Ontario's manufacturing sector 
-                      with expert automation solutions. Our team of experienced engineers specializes in 
-                      PLC programming, Siemens integration, and Allen Bradley systems.
+                      Since 2010, Tov Industrial Automation has been serving Ontario's manufacturing sector
+                      with expert automation solutions. Our team of experienced engineers specializes in
+                      PLC programming, OMRON integration, and Allen Bradley systems.
                     </p>
                     <p>
                       We focus on helping small to mid-sized manufacturers and food processing facilities 
