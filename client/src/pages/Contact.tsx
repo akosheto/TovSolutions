@@ -69,105 +69,15 @@ export default function Contact() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
-              <div>
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-2xl">Send Us a Message</CardTitle>
-                    <CardDescription>
-                      Fill out the form below and we'll respond within 24 hours
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <form onSubmit={handleSubmit} className="space-y-4">
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="name">Name *</Label>
-                          <Input
-                            id="name"
-                            value={formData.name}
-                            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                            required
-                            data-testid="input-name"
-                          />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="company">Company</Label>
-                          <Input
-                            id="company"
-                            value={formData.company}
-                            onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                            data-testid="input-company"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div className="space-y-2">
-                          <Label htmlFor="email">Email *</Label>
-                          <Input
-                            id="email"
-                            type="email"
-                            value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            required
-                            data-testid="input-email"
-                          />
-                        </div>
-                        <div className="space-y-2">
-                          <Label htmlFor="phone">Phone</Label>
-                          <Input
-                            id="phone"
-                            type="tel"
-                            value={formData.phone}
-                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                            data-testid="input-phone"
-                          />
-                        </div>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="projectType">Project Type</Label>
-                        <Select
-                          value={formData.projectType}
-                          onValueChange={(value) => setFormData({ ...formData, projectType: value })}
-                        >
-                          <SelectTrigger id="projectType" data-testid="select-project-type">
-                            <SelectValue placeholder="Select project type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="plc">PLC Programming</SelectItem>
-                            <SelectItem value="siemens">Siemens Integration</SelectItem>
-                            <SelectItem value="allen-bradley">Allen Bradley Solutions</SelectItem>
-                            <SelectItem value="modernization">System Modernization</SelectItem>
-                            <SelectItem value="support">Support & Maintenance</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-
-                      <div className="space-y-2">
-                        <Label htmlFor="message">Message *</Label>
-                        <Textarea
-                          id="message"
-                          value={formData.message}
-                          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                          rows={5}
-                          required
-                          data-testid="input-message"
-                        />
-                      </div>
-
-                      <Button 
-                        type="submit" 
-                        className="w-full" 
-                        disabled={submitMutation.isPending}
-                        data-testid="button-submit-contact"
-                      >
-                        {submitMutation.isPending ? "Sending..." : "Send Message"}
-                      </Button>
-                    </form>
-                  </CardContent>
-                </Card>
+              <div
+                style={{
+                  backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fe0f6141f5317431caaa2c4c8632a3af8)",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                <Card className="hidden" />
               </div>
 
               <div className="space-y-6">
@@ -191,7 +101,7 @@ export default function Contact() {
                       <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold mb-1">Phone</h4>
-                        <p className="text-sm text-muted-foreground">(555) 123-4567</p>
+                        <p className="text-sm text-muted-foreground">(647) 376-5406</p>
                       </div>
                     </div>
 
@@ -199,7 +109,7 @@ export default function Contact() {
                       <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <h4 className="font-semibold mb-1">Email</h4>
-                        <p className="text-sm text-muted-foreground">info@tovautomation.ca</p>
+                        <p className="text-sm text-muted-foreground">tov.automations@gmail.com</p>
                       </div>
                     </div>
 
