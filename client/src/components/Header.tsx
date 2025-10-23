@@ -20,15 +20,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-background border-b">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" data-testid="link-home">
-            <div className="flex items-center gap-3 hover-elevate active-elevate-2 rounded-md px-3 py-2 -ml-3">
-              <Factory className="w-8 h-8 text-primary flex-shrink-0" />
-              <div className="flex flex-col -space-y-1">
-                <span className="text-xl font-bold leading-none">TOV</span>
-                <span className="text-xs font-medium text-muted-foreground hidden sm:inline leading-none">INDUSTRIAL AUTOMATION</span>
-              </div>
-            </div>
-          </Link>
+          <Link href="/" data-testid="link-home" />
 
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
