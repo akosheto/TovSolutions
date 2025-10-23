@@ -26,8 +26,8 @@ export default function Services() {
       title: "OMRON Integration",
       description: "Comprehensive OMRON automation from design through implementation and support.",
       features: [
-        "S7-1200/1500 Programming",
-        "TIA Portal Development",
+        "CX-One Integration Software",
+        "Ovens Mixer Flour System",
         "SCADA Integration",
         "System Migration",
         "Network Configuration",
@@ -139,21 +139,15 @@ export default function Services() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="overflow-hidden">
                 <div className="aspect-video overflow-hidden">
-                  <img src={siemensImage} alt="Siemens PLC Equipment" className="w-full h-full object-cover" />
+                  <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2F465fb5023e7b41ba88580977e1fd1f75" alt="OMRON PLC Equipment" className="w-full h-full object-cover" />
                 </div>
                 <CardHeader>
                   <CardTitle className="text-2xl">OMRON</CardTitle>
                   <CardDescription className="text-base">
-                    Certified partner for OMRON automation systems including TIA Portal, S7 series PLCs, and SCADA solutions.
+                    Certified partner for OMRON automation systems.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">TIA Portal</Badge>
-                    <Badge variant="secondary">S7-1200</Badge>
-                    <Badge variant="secondary">S7-1500</Badge>
-                    <Badge variant="secondary">WinCC</Badge>
-                  </div>
                 </CardContent>
               </Card>
 
