@@ -31,7 +31,7 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="mb-4">
-              <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fbd9c4b48f3c946ee8607d39b150f4dfc" alt="TOV Industrial Automation" className="w-auto" style={{ height: "130px" }} />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2F2b544f904a694bbb815ba9c8094ed0a7" alt="TOV Industrial Automation" className="w-auto" style={{ height: "130px" }} />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Expert industrial automation solutions across Ontario for over 15 years.
