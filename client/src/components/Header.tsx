@@ -20,7 +20,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" data-testid="link-home" className="flex flex-col">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2F0879fbf68aa842f5814d6c2495d62d8c?format=webp&width=800" alt="TOV Industrial Automation" className="w-auto mx-auto" style={{ height: "72px" }} />
+            <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fbd9c4b48f3c946ee8607d39b150f4dfc" alt="TOV Industrial Automation" className="w-auto mx-auto" style={{ height: "64px" }} />
           </Link>
 
           <nav className="hidden md:flex items-center gap-1">
