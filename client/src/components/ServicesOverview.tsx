@@ -52,6 +52,12 @@ export function ServicesOverview() {
             </Card>
           ))}
         </div>
+        <img
+          alt="TOV Industrial Automation"
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fbd9c4b48f3c946ee8607d39b150f4dfc"
+          style={{ display: "block", height: "407px", margin: "0 auto" }}
+        />
       </div>
     </section>
   );
