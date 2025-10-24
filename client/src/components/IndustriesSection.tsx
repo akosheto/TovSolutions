@@ -1,13 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import bakeryImage from "@assets/generated_images/Bakery_automation_case_study_417f70b8.png";
 import manufacturingImage from "@assets/generated_images/Manufacturing_automation_case_study_c606602e.png";
-import siemensImage from "@assets/generated_images/Siemens_PLC_service_detail_3ba9a526.png";
 
 export function IndustriesSection() {
   const industries = [
     { name: "Small Manufacturing", image: manufacturingImage },
     { name: "Food Processing & Bakeries", image: bakeryImage },
-    { name: "Material Handling", image: siemensImage },
+    { name: "Material Handling", image: "https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fe0f6141f5317431caaa2c4c8632a3af8" },
   ];
 
   return (

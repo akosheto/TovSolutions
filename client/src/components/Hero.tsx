@@ -13,11 +13,10 @@ export function Hero() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-          Industrial Automation Excellence<br />Across Ontario
+          PLC Industrial Automation Experts
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-          15+ years of proven expertise in PLC programming, Siemens and Allen Bradley systems. 
-          Trusted by small manufacturers and bakeries across the province.
+        <p className="text-2xl md:text-3xl text-white/90 mb-8 max-w-3xl mx-auto">
+          15+ years of proven expertise in PLC programming, including OMRON and Allen-Bradley systems. Trusted by SME manufacturers and bakeries across Ontario.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/case-studies" data-testid="link-view-work">

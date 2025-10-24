@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail, Phone, MapPin, Factory } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { SiLinkedin } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 
@@ -18,9 +18,9 @@ export function Footer() {
     {
       title: "Services",
       links: [
-        { label: "PLC Programming", path: "/services" },
-        { label: "Siemens Integration", path: "/services" },
-        { label: "Allen Bradley Solutions", path: "/services" },
+        { label: "Custom PLC Programming", path: "/services" },
+        { label: "OMRON PLC", path: "/services" },
+        { label: "Allen-Bradley PLC Solutions", path: "/services" },
       ],
     },
   ];
@@ -30,12 +30,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <Factory className="w-8 h-8 text-primary flex-shrink-0" />
-              <div className="flex flex-col -space-y-1">
-                <span className="text-lg font-bold leading-none">TOV</span>
-                <span className="text-xs font-medium text-muted-foreground leading-none">INDUSTRIAL AUTOMATION</span>
-              </div>
+            <div className="mb-4">
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2F2b544f904a694bbb815ba9c8094ed0a7" alt="TOV Industrial Automation" className="w-auto" style={{ height: "130px" }} />
             </div>
             <p className="text-sm text-muted-foreground mb-4">
               Expert industrial automation solutions across Ontario for over 15 years.
@@ -68,11 +64,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <span>(555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail className="h-4 w-4 flex-shrink-0" />
-                <span>info@tovautomation.ca</span>
+                <span>(647) 376-5406</span>
               </li>
             </ul>
             <div className="mt-4">
@@ -86,7 +78,7 @@ export function Footer() {
         </div>
 
         <div className="border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Tov Industrial Automation. All rights reserved.</p>
+          <p>&copy; {currentYear} TOV Industrial Automation. All rights reserved.</p>
         </div>
       </div>
     </footer>

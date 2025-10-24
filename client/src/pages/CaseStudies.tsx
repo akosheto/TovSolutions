@@ -19,9 +19,9 @@ export default function CaseStudies() {
       category: "siemens",
       title: "Commercial Bakery Production Line",
       challenge: "Manual production processes causing inconsistent quality and high waste rates.",
-      solution: "Implemented Siemens S7-1500 PLC system with automated mixing, baking, and packaging controls.",
+      solution: "Implemented OMRON PLC system with automated mixing, baking, and packaging controls.",
       results: ["40% efficiency increase", "25% waste reduction", "Consistent quality output"],
-      equipment: "Siemens S7-1500, TIA Portal, WinCC HMI",
+      equipment: "OMRON PLC",
     },
     {
       image: manufacturingImage,
@@ -34,14 +34,14 @@ export default function CaseStudies() {
       equipment: "ControlLogix 5580, Studio 5000, FactoryTalk View",
     },
     {
-      image: siemensImage,
+      image: "https://cdn.builder.io/api/v1/image/assets%2F2ea65458d04b4b71ad4b92e42dbb930b%2Fbbf535b878c84099a29b03d5b28d11e7?format=webp",
       industry: "Material Handling",
       category: "siemens",
       title: "Warehouse Automation System",
       challenge: "Inefficient material flow and inventory tracking causing bottlenecks.",
       solution: "Integrated conveyor control system with automated sorting and tracking.",
       results: ["50% faster throughput", "99.5% tracking accuracy", "Reduced labor costs"],
-      equipment: "Siemens S7-1200, Profinet Network, RFID Integration",
+      equipment: "OMRON PLC",
     },
     {
       image: allenBradleyImage,
@@ -57,8 +57,8 @@ export default function CaseStudies() {
 
   const categories = [
     { id: "all", label: "All Projects" },
-    { id: "siemens", label: "Siemens" },
-    { id: "allen-bradley", label: "Allen Bradley" },
+    { id: "siemens", label: "OMRON" },
+    { id: "allen-bradley", label: "Allen-Bradley" },
   ];
 
   const filteredStudies = filter === "all" 

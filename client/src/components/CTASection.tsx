@@ -13,7 +13,7 @@ export function CTASection() {
         </p>
         <Link href="/contact" data-testid="link-get-started">
           <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90">
-            Get Started Today
+            Contact Us Today!
           </Button>
         </Link>
       </div>

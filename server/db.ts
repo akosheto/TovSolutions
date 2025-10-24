@@ -1,10 +1,3 @@
-import { drizzle } from "drizzle-orm/neon-serverless";
-import { Pool } from "@neondatabase/serverless";
-import * as schema from "@shared/schema";
-
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL must be set");
-}
-
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-export const db = drizzle({ client: pool, schema });
+// Database module - currently using in-memory storage
+// If you need to add a real database in the future, configure it here
+export const db = null;
